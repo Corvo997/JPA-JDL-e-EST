@@ -1,0 +1,9 @@
+{
+  "consultorio5App": {
+    "TipoPagamento": {
+      "null": "",
+      "AVISTA": "AVISTA",
+      "PLANOSAUDE": "PLANOSAUDE"
+    }
+  }
+}

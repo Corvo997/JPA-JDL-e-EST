@@ -1,0 +1,10 @@
+{
+  "consultorio5App": {
+    "TipoProcedimento": {
+      "null": "",
+      "LIMPEZA": "LIMPEZA",
+      "OBTURACAO": "OBTURACAO",
+      "EXTRACAO": "EXTRACAO"
+    }
+  }
+}

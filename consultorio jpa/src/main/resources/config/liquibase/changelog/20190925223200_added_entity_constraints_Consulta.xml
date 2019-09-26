@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity Consulta.
+    -->
+    <changeSet id="20190925223200-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="pagamento_id"
+                                 baseTableName="consulta"
+                                 constraintName="fk_consulta_pagamento_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="pagamento"/>
+
+        <addForeignKeyConstraint baseColumnNames="consulta_id"
+                                 baseTableName="consulta_pessoa"
+                                 constraintName="fk_consulta_pessoa_consulta_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="consulta"/>
+
+        <addForeignKeyConstraint baseColumnNames="pessoa_id"
+                                 baseTableName="consulta_pessoa"
+                                 constraintName="fk_consulta_pessoa_pessoa_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="pessoa"/>
+        
+    </changeSet>
+</databaseChangeLog>

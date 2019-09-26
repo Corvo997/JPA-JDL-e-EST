@@ -1,0 +1,34 @@
+{
+    "name": "Funcionario",
+    "fields": [
+        {
+            "fieldName": "numeroRegistro",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "nome",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "salario",
+            "fieldType": "Double"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "consultorio",
+            "otherEntityRelationshipName": "funcionario",
+            "relationshipName": "consultorio"
+        }
+    ],
+    "changelogDate": "20190925223201",
+    "entityTableName": "funcionario",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

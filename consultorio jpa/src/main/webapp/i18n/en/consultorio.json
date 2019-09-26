@@ -1,0 +1,24 @@
+{
+  "consultorio5App": {
+    "consultorio": {
+      "home": {
+        "title": "Consultorios",
+        "createLabel": "Create a new Consultorio",
+        "createOrEditLabel": "Create or edit a Consultorio",
+        "notFound": "No Consultorios found"
+      },
+      "created": "A new Consultorio is created with identifier {{ param }}",
+      "updated": "A Consultorio is updated with identifier {{ param }}",
+      "deleted": "A Consultorio is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Consultorio {{ id }}?"
+      },
+      "detail": {
+        "title": "Consultorio"
+      },
+      "nome": "Nome",
+      "consultas": "Consultas",
+      "funcionario": "Funcionario"
+    }
+  }
+}

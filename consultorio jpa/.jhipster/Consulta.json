@@ -1,0 +1,46 @@
+{
+    "name": "Consulta",
+    "fields": [
+        {
+            "fieldName": "dataConsulta",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "tipoProcedimento",
+            "fieldType": "TipoProcedimento",
+            "fieldValues": "LIMPEZA,OBTURACAO,EXTRACAO"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "pagamento",
+            "otherEntityRelationshipName": "consulta",
+            "relationshipName": "pagamento",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "pessoa",
+            "otherEntityRelationshipName": "consulta",
+            "relationshipName": "pessoa",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "consultorio",
+            "otherEntityRelationshipName": "consultas",
+            "relationshipName": "consultorio"
+        }
+    ],
+    "changelogDate": "20190925223200",
+    "entityTableName": "consulta",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
